@@ -51,9 +51,6 @@
   "jest": {
     "automock": false,
     "maxWorkers": 4,
-    "setupFiles": [
-      "./setupJest.js"
-    ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
@@ -77,7 +74,7 @@
     ]
   },
   "dependencies": {
-    "async": "^3.1.1",
+    "async": "^3.2.3",
     "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "connect-session-knex": "^2.1.0",
@@ -99,11 +96,11 @@
     "js-yaml": "^4.1.0",
     "knex": "1.0.4",
     "log4js": "^6.0.0",
+    "make-fetch-happen": "^10.1.2",
     "memoizee": "^0.4.15",
     "mime": "^2.4.2",
     "multer": "^1.4.1",
     "mustache": "^4.1.0",
-    "node-fetch": "^2.6.7",
     "nodemailer": "^6.5.0",
     "owasp-password-strength-test": "^1.3.0",
     "parse-database-url": "^0.3.0",
@@ -112,12 +109,12 @@
     "pkginfo": "^0.4.1",
     "prom-client": "^14.0.0",
     "response-time": "^2.3.2",
+    "semver": "^7.3.5",
     "serve-favicon": "^2.5.0",
     "stoppable": "^1.1.0",
     "type-is": "^1.6.18",
     "unleash-frontend": "4.10.0-beta.6",
-    "uuid": "^8.3.2",
-    "semver": "^7.3.5"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.17.9",
@@ -127,10 +124,10 @@
     "@types/faker": "5.5.9",
     "@types/jest": "27.4.1",
     "@types/js-yaml": "4.0.5",
+    "@types/make-fetch-happen": "^9.0.2",
     "@types/memoizee": "0.4.7",
     "@types/mime": "2.0.3",
     "@types/node": "16.6.1",
-    "@types/node-fetch": "2.6.1",
     "@types/nodemailer": "6.4.4",
     "@types/owasp-password-strength-test": "1.3.0",
     "@types/stoppable": "1.1.1",
@@ -152,8 +149,8 @@
     "fetch-mock": "9.11.0",
     "husky": "7.0.4",
     "jest": "27.5.1",
-    "jest-fetch-mock": "3.0.3",
     "lint-staged": "12.3.7",
+    "nock": "^13.2.4",
     "prettier": "2.6.2",
     "proxyquire": "2.1.3",
     "source-map-support": "0.5.21",
